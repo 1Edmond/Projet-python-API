@@ -250,7 +250,7 @@ L'API vous renvoie 5 types d'erreur:
   Il retourne une nouvelle categorie avec la nouvelle valeur.
 
   EXEMPLE.....Avec Patch
-  ``` curl -X PATCH 'http://localhost:5000/categories/4' -H "Content-Type:application/json" -d '{"categorie": "Bandes Dessinées"}'
+  ``` curl -X PATCH 'http://localhost:5000/categories/4' -H "Content-Type:application/json" -d '{"libelle_categorie": "Bandes Dessinées"}'
   ```
   ```
    {
@@ -292,4 +292,3 @@ L'API vous renvoie 5 types d'erreur:
     "success": true
 }
 ```
-
