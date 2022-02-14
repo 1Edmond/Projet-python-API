@@ -6,15 +6,8 @@ from sqlalchemy import *
 from dotenv import load_dotenv
 load_dotenv()
 
-motdepasse=quote_plus(os.getenv('pswrd'))
-dialect=quote_plus(os.getenv('dialect'))
-user=quote_plus(os.getenv('user'))
-host=quote_plus(os.getenv('host'))
-database=quote_plus(os.getenv('database'))
-port=quote_plus(os.getenv('port'))
-
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "{}://{}:{}@{}:{}/{}".format(dialect,user,motdepasse,host,port,database)
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://icjepezldkutwl:dd6c924276620a32711ba1aade631047c28112247dde38a47f290caeab572842@ec2-54-174-43-13.compute-1.amazonaws.com:5432/d3rv11rq575in0"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)

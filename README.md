@@ -51,7 +51,7 @@ Getting starter
 Base URL: At present this app can only be run locally and is not hosted as a base URL. The backend app is hosted at the default, http://localhost:5000; which is set as a proxy in frontend configuration.
 
 ## Type d'erreur
-Les erreurs sont renvoyées sou forme d'objet au format Json:
+Les erreurs sont renvoyées sous forme d'objet au format Json:
 {
     "success":False
     "error": 404
